@@ -1,0 +1,29 @@
+Welcome to Kroger.  Place grocery items into your shopping cart by entering each item's information.
+   enclose string entries in quotes, separate fields with comas
+   for example:  "00016000306707", "Betty Crocker", "Betty Crocker Double Chocolate Chunk Cookie Mix", 17.19
+   Enter CTL-Z (Windows) or CTL-D (Linux) to quit
+
+Enter UPC, Product Brand, Product Name, and Price
+Item added to shopping cart: "00072250018548",  "Nature's Own",  "Nature's Own Butter Buns Hotdog - 8 Ct",  10.79
+
+Enter UPC, Product Brand, Product Name, and Price
+Item added to shopping cart: "00028000517205",  "Nestle",  "Nestle Media Crema Table Cream",  17.97
+
+Enter UPC, Product Brand, Product Name, and Price
+Item added to shopping cart: "00034000020706",  "York",  "York Peppermint Patties Dark Chocolate Covered Snack Size",  12.64
+
+Enter UPC, Product Brand, Product Name, and Price
+Item added to shopping cart: "00038000570742",  "Kellogg's",  "Kellogg's Cereal Krave Chocolate",  18.66
+
+Enter UPC, Product Brand, Product Name, and Price
+Item added to shopping cart: "00014100072331",  "Pepperidge Farm",  "Pepperidge Farm Classic Cookie Favorites",  14.43
+
+Enter UPC, Product Brand, Product Name, and Price
+
+
+Here is an itemized list of the items in your shopping cart:
+"00014100072331",  "Pepperidge Farm",  "Pepperidge Farm Classic Cookie Favorites",  14.43
+"00038000570742",  "Kellogg's",  "Kellogg's Cereal Krave Chocolate",  18.66
+"00034000020706",  "York",  "York Peppermint Patties Dark Chocolate Covered Snack Size",  12.64
+"00028000517205",  "Nestle",  "Nestle Media Crema Table Cream",  17.97
+"00072250018548",  "Nature's Own",  "Nature's Own Butter Buns Hotdog - 8 Ct",  10.79

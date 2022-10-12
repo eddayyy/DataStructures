@@ -1,0 +1,16 @@
+"00072250018548","Nature's Own","Nature's Own Butter Buns Hotdog - 8 Ct",10.79
+
+"00028000517205", "Nestle"             , 
+"Nestle Media Crema Table Cream"       , 
+17.97
+
+"00034000020706"    , 
+"York", 
+"York Peppermint Patties Dark Chocolate Covered Snack Size", 
+12.64 "00038000570742", 
+"Kellogg's", "Kellogg's Cereal Krave Chocolate",
+  18.66
+
+"00014100072331" , "Pepperidge Farm", "Pepperidge Farm Classic Cookie Favorites", 14.43
+
+"00000000000000", "incomplete / invalid item"

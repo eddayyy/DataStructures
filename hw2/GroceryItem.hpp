@@ -51,7 +51,7 @@ class GroceryItem
 
   private:
     std::string _upcCode;                                                     // a 12 or 14-digit international Universal Product Code uniquely identifying this item (Ex: 051600080015, 05017402006207)
-    std::string _brandName;                                                   // the product manufactureï¿½s brand name (Ex: Heinz, Boston Market)
+    std::string _brandName;                                                   // the product manufacture’s brand name (Ex: Heinz, Boston Market)
     std::string _productName;                                                 // the name of the product (Ex: Heinz Tomato Ketchup - 2 Ct, Boston Market Spaghetti With Meatballs)
     double      _price = 0.0;                                                 // the cost of the item in US Dollars (Ex:  2.29, 1.19)
 };

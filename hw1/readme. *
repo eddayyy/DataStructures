@@ -1,0 +1,21 @@
+// Author: Eduardo Nunez
+// Author email: eduardonunez@csu.fullerton.edu 
+// File Purpose: To document my process of working through this assignment and program
+//
+// Thoughts: This assignment was very long for me as I had to refresh my memory quite a few times. 
+// My process throughout this entire program was to create the class GrocerItems first and then implement 
+// the class functions into the main.cpp main function. 
+//
+// I did this because I wasn't exactly sure how or where to begin and I can confidently say that doing it 
+// in this order was a good idea. I was able to understand the functions, their purposes, and their "why". 
+// This in turn made the developing process of the main function a whole lot easier. 
+// 
+// Hands down the hardest part of this assignment was the spaceship operator, the >> operator, and the << operator
+// I had to refer to the solution video so that I could thoroughly understand these portions.
+//
+// The main was a bit hard but overall, I got through it and I'm glad I did.
+//
+//
+// Author's note:
+//      I know the //'s are totally unneccessary but they're aesthetically pleasing to me so I will
+//   use them throughout this file. 

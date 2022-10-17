@@ -1,17 +1,22 @@
-#include <algorithm>    // find(), move(), move_backward(), equal(), swap(), lexicographical_compare()
-#include <cmath>        // min()
-#include <cstddef>      // size_t
-#include <forward_list>
-#include <initializer_list>
-#include <iomanip>    // setw()
 #include <iostream>
-#include <iterator>    // distance(), next()
-#include <iterator>
+#include <vector> 
+#include <forward_list>
 #include <list>
-#include <stdexcept>    // logic_error
-#include <string>
-#include <vector>
+
+#include "bookStore.hpp"
 
 int main()
 {
+    std::string bookName;
+    std::string genre;
+    std::forward_list<std::string> inventory;
+    std::cout << "Hello welcome to Barnes & Noble, what book are you looking for today?\n";
+    getline(std::cin, bookName);
+    std::cout << "Great now we just need the genre of " << bookName << " \n"; 
+    getline(std::cin, genre);
+    inventoryImport(inventory, bookName, genre);
+    for (auto i = inventory.begin(); i != inventory.end(); i++){
+        std::cout << "[ " << *i << " ]\n";
+    }
+    
 }

@@ -1,0 +1,17 @@
+"Bob","McTesterson",35
+"Roberta","McTesterson",32
+"Juan","Julio",28
+"Khanh","Chu",33
+"Jane","Doe",55
+"Zach","Goldstein",40
+"Sara","Sanchez",37
+"Donna","Smith",29
+"Albert","Ainstone",79
+"Sam","Nguyen",62
+"Stevie","Hicks",19
+"JoeBob","Trianglepants",45
+"Dina","Myte",24
+"Nathan","Coopersmith",87
+"Maria","Francisco",38
+"Roseanne","Roseannadanna",45
+

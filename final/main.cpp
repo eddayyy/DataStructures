@@ -182,8 +182,8 @@ int main( )
               << printedPerson.FirstName() 
               << " " 
               << printedPerson.LastName() 
-              << " has been found, their age is " 
-              << printedPerson.Age() << ".\n" 
+              << " has been found, they are " 
+              << printedPerson.Age() << " years old.\n" 
               << std::endl
               << fname << "'s friends are: \n";
 

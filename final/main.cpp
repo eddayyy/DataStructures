@@ -64,6 +64,14 @@ More information regarding this file can be found in the header of Build.sh.
 #include "Person.hpp"         // for Person class
 #include "SocialNetwork.hpp"  // for SocialNetwork class
 
+  /*************************************************************************************************************************** 
+  Part 1 has 5 tasks: 
+  Task 1 - Complete the operator>> overload for std::pair objects so we can properly import connections.txt below
+  Task 2 - Create a SocialNetwork Object
+  Task 3 - Import the people.txt file contents into your SocialNetwork object as Nodes.
+  Task 4 - Import the connections.txt file contents into your SocialNetwork object as Edges.
+  Task 5 - Using std::cout, tell us how many Nodes (people) and how many Edges (connections) there are in the graph.
+  *****************************************************************************************************************************/
 
 // (1) Override the >> operator for std::pair so we can import Edges from connections.txt
 std::istream & operator>>( std::istream & stream, std::pair<int, int> & nums )
@@ -81,15 +89,6 @@ std::istream & operator>>( std::istream & stream, std::pair<int, int> & nums )
 
 int main( )
 {
-  /*************************************************************************************************************************** 
-  Part 1 has 5 tasks: 
-  Task 1 - Complete the operator>> overload for std::pair objects so we can properly import connections.txt below
-  Task 2 - Create a SocialNetwork Object
-  Task 3 - Import the people.txt file contents into your SocialNetwork object as Nodes.
-  Task 4 - Import the connections.txt file contents into your SocialNetwork object as Edges.
-  Task 5 - Using std::cout, tell us how many Nodes (people) and how many Edges (connections) there are in the graph.
-  *****************************************************************************************************************************/
-
   // (2) Create SocialNetwork Object
   SocialNetwork networkGraph;
   std::vector<std::pair<int, Person>> Graph;
@@ -100,7 +99,7 @@ int main( )
   {
     for( std::string line; std::getline( peopleFile, line ); /**/ )
     {
-      Person personObject;                                            //Create a person object
+      Person personObject;                                            // Create a person object
       std::istringstream lineStream(line);                            // Read the person object from the input stream
       lineStream >> personObject;
       if(personObject.isValid()){                                     // Add the person to the network ONLY if it is a valid person
@@ -194,6 +193,7 @@ int main( )
   else {
     std::cout << "\nWe apologize but we could not find '" << fname << " " << lname << "'." << std::endl;
   }
+  
   // (6) Prompt the user to search for 2 people by entering their first and last names
   std::string p1FN, p1LN, p2FN, p2LN;
   std::cout << "\n Task 6 - Find the degrees of separation between 2 people:"
@@ -213,8 +213,13 @@ int main( )
   if(!p1Search.empty() && !p2Search.empty()){                         // Check that the lists were populated (implying the person was found)
     Person person1 = p1Search.front();                                // Insert the front of the lists into Person objects
     Person person2 = p2Search.front();                                // Then use distanceBetween() function to find the degrees of separation
-    auto distanceBetw = networkGraph.distanceBetween(person1, person2); 
-    std::cout << person1.FirstName() << " and " << person2.FirstName() << " have " << distanceBetw << " degrees of separation!" << std::endl;
+    auto distanceBetw = networkGraph.distanceBetween(person1, person2);
+    if( distanceBetw > 1 ) {
+      std::cout << person1.FirstName() << " and " << person2.FirstName() << " have " << distanceBetw << " degrees of separation!" << std::endl;
+    }
+    else{
+      std::cout << person1.FirstName() << " and " << person2.FirstName() << " are friends!\n";
+    }
   } 
   else{                                                               // In case we can't find one or more of the people searched for
     std::cout << "We could not find the people you were searching for! " << std::endl;

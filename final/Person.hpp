@@ -33,7 +33,7 @@ Purpose
   (CPSC 131) this semester.
 
 This file
-  File name: main.cpp
+  File name: Person.cpp
   Language: C++
 ========1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**
 Compiling and Linking this program and file:

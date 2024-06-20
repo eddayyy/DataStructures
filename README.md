@@ -1,2 +1,1 @@
-# CS131
-All C++ projects developed in CPSC-131 during the Fall 2022 semester 
+Multiple C++ Projects developed throughout my Data Structures & Algorithms learning arc
